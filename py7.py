@@ -1,11 +1,11 @@
 ﻿# Задание 1
 
-n = int(input())
-x = set()
+# n = int(input())
+# x = set()
 
-x = set(map(int, input().split()))
+# x = set(map(int, input().split()))
 
-print(len(x))
+# print(len(x))
 
 # Задание 2
 
@@ -15,28 +15,27 @@ y = []
 x = list(map(int, input().split()))
 y = list(map(int, input().split()))
 
+print()
+
 for i in range(len(x)):
-    if x[i] != x[-1]:
-        print(x[i], end=' ')
-    else:
-        print(x[i])
+    print(x[i], end=' ')
+print()
 
 for i in range(len(y)):
-    if y[i] != y[-1]:
-        print(y[i], end=' ')
-    else:
-        print(y[i])
-print(len(x) + len(y))
+    print(y[i], end=' ')   
+print ()
+
+print(len(set(x).intersection(set(y))))
 
 # Задание 3
 
-l = list(map(int, input().split()))
-x = []
-for i in l:
-    if i in x:
-        print('YES')
-    else:
-        x.append(i)
-        print('NO')
+# l = list(map(int, input().split()))
+# x = []
+# for i in l:
+#     if i in x:
+#         print('YES')
+#     else:
+#         x.append(i)
+#         print('NO')
 
-input()
+# input()
